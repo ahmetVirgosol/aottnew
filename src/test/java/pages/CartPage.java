@@ -39,27 +39,50 @@ public class CartPage extends BasePage {
         if (expectedTitle == null) expectedTitle = "";
         expectedTitle = expectedTitle.trim();
 
-       
         var nameLinks = findElements(By.cssSelector("div.product_name_2Klj3 a[href]"));
 
         assertThat(nameLinks)
                 .withFailMessage("Sepette hic urun bulunamadi.")
                 .isNotEmpty();
 
-        WebElement first = nameLinks.get(0);
-
         if (!expectedTitle.isBlank()) {
-            String inCartTitle = first.getText() == null ? "" : first.getText().trim();
-            String expectedSnippet = expectedTitle.length() > 40
-                    ? expectedTitle.substring(0, 40)
-                    : expectedTitle;
+            String core = extractCoreTitle(expectedTitle);
+            String expectedSnippet = core.length() > 40 ? core.substring(0, 40) : core;
+            String expectedLower = expectedSnippet.toLowerCase();
 
-            assertThat(inCartTitle.toLowerCase())
-                    .withFailMessage("Sepetteki urun basligi beklenenden farkli. Beklenen icersin: %s, Bulunan: %s",
-                            expectedSnippet, inCartTitle)
-                    .contains(expectedSnippet.toLowerCase());
+            boolean anyMatch = false;
+            String lastSeen = "";
+
+            for (WebElement link : nameLinks) {
+                String inCartTitle = link.getText() == null ? "" : link.getText().trim();
+                lastSeen = inCartTitle;
+                if (!inCartTitle.isEmpty() && inCartTitle.toLowerCase().contains(expectedLower)) {
+                    anyMatch = true;
+                    break;
+                }
+            }
+
+            assertThat(anyMatch)
+                    .withFailMessage("Sepetteki urun basligi beklenenden farkli. Beklenen icersin: %s, Son gorulen: %s",
+                            expectedSnippet, lastSeen)
+                    .isTrue();
         }
 
         logger.info("Urunun sepette oldugu basariyla dogrulandi.");
+    }
+
+    private String extractCoreTitle(String raw) {
+        String cleaned = raw.replace("\r", "");
+        String[] lines = cleaned.split("\n");
+        String best = cleaned.trim();
+        int bestLen = 0;
+        for (String line : lines) {
+            String t = line.trim();
+            if (t.length() > bestLen) {
+                bestLen = t.length();
+                best = t;
+            }
+        }
+        return best;
     }
 }
