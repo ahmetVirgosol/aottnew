@@ -1,0 +1,468 @@
+src\test\java\base\BaseTest.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebDriver;
+                          ^
+src\test\java\base\BaseTest.java:6: error: package org.openqa.selenium.chrome does not exist
+import org.openqa.selenium.chrome.ChromeDriver;
+                                 ^
+src\test\java\base\BaseTest.java:7: error: package org.openqa.selenium.chrome does not exist
+import org.openqa.selenium.chrome.ChromeOptions;
+                                 ^
+src\test\java\base\BaseTest.java:14: error: cannot find symbol
+    protected static WebDriver driver;
+                     ^
+  symbol:   class WebDriver
+  location: class BaseTest
+src\test\java\base\BaseTest.java:40: error: cannot find symbol
+    public static WebDriver getDriver() {
+                  ^
+  symbol:   class WebDriver
+  location: class BaseTest
+src\test\java\org\example\BasePage.java:13: error: cannot find symbol
+    protected WebDriver driver;
+              ^
+  symbol:   class WebDriver
+  location: class BasePage
+src\test\java\org\example\BasePage.java:14: error: cannot find symbol
+    protected WebDriverWait wait;
+              ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src\test\java\org\example\BasePage.java:33: error: cannot find symbol
+    protected WebElement findElement(By locator) {
+                                     ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:33: error: cannot find symbol
+    protected WebElement findElement(By locator) {
+              ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:38: error: cannot find symbol
+    protected void clickElement(By locator) {
+                                ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:49: error: cannot find symbol
+    protected void sendKeysToElement(By locator, String text) {
+                                     ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:56: error: cannot find symbol
+    protected List<WebElement> findElements(By locator) {
+                                            ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:56: error: cannot find symbol
+    protected List<WebElement> findElements(By locator) {
+                   ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:61: error: cannot find symbol
+    protected void waitUntilVisible(By locator) {
+                                    ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:71: error: cannot find symbol
+    protected Optional<WebElement> findOptional(By locator, Duration timeout) {
+                                                ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:71: error: cannot find symbol
+    protected Optional<WebElement> findOptional(By locator, Duration timeout) {
+                       ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:81: error: cannot find symbol
+    protected void scrollIntoView(WebElement element) {
+                                  ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:87: error: cannot find symbol
+    protected void jsClick(By locator) {
+                           ^
+  symbol:   class By
+  location: class BasePage
+src\test\java\org\example\BasePage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.*;
+^
+src\test\java\org\example\BasePage.java:5: error: package org.openqa.selenium.support.ui does not exist
+import org.openqa.selenium.support.ui.*;
+^
+src\test\java\org\example\Locator.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src\test\java\org\example\Locator.java:15: error: cannot find symbol
+    public static By get(String key) {
+                  ^
+  symbol:   class By
+  location: class Locator
+src\test\java\org\example\StepImplementation.java:8: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.Keys;
+                          ^
+src\test\java\org\example\StepImplementation.java:9: error: package org.openqa.selenium.interactions does not exist
+import org.openqa.selenium.interactions.Actions;
+                                       ^
+src\test\java\pages\HomePage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src\test\java\pages\LoginPage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src\test\java\pages\SearchPage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src\test\java\pages\SearchPage.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.JavascriptExecutor;
+                          ^
+src\test\java\pages\SearchPage.java:6: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebElement;
+                          ^
+src\test\java\pages\CartPage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src\test\java\pages\CartPage.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebElement;
+                          ^
+src\test\java\pages\CartPage.java:13: error: cannot find symbol
+    private final By addToCartDirectButton = By.id("addToCart");
+                  ^
+  symbol:   class By
+  location: class CartPage
+src\test\java\pages\CartPage.java:14: error: cannot find symbol
+    private final By cartIcon = By.id("shoppingCart");
+                  ^
+  symbol:   class By
+  location: class CartPage
+src\test\java\pages\CartPage.java:15: error: cannot find symbol
+    private final By cartItemName = By.className("product_name_2Klj3");
+                  ^
+  symbol:   class By
+  location: class CartPage
+src\test\java\pages\CartPage.java:16: error: cannot find symbol
+    private final By productTitleH1 = By.cssSelector("h1");
+                  ^
+  symbol:   class By
+  location: class CartPage
+src\test\java\pages\SearchPage.java:20: error: cannot find symbol
+    private final By productListItems = By.cssSelector("li[class*='productList']");
+                  ^
+  symbol:   class By
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:76: error: cannot find symbol
+    private int resolveSecondRowFirstItemIndex(List<WebElement> products) {
+                                                    ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:128: error: cannot find symbol
+    private String safeText(WebElement el) {
+                            ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\LoginPage.java:11: error: cannot find symbol
+    private final By emailInput = By.id("txtUserName");
+                  ^
+  symbol:   class By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:12: error: cannot find symbol
+    private final By loginButtonAfterEmail = By.id("btnLogin");
+                  ^
+  symbol:   class By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:13: error: cannot find symbol
+    private final By passwordInput = By.id("txtPassword");
+                  ^
+  symbol:   class By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:14: error: cannot find symbol
+    private final By btnEmailSelect = By.id("btnEmailSelect");
+                  ^
+  symbol:   class By
+  location: class LoginPage
+src\test\java\pages\HomePage.java:14: error: cannot find symbol
+    private final By loginOrRegisterButton = By.id("myAccount");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\pages\HomePage.java:15: error: cannot find symbol
+    private final By loginButton = By.id("login");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\pages\HomePage.java:16: error: cannot find symbol
+    private final By searchBox = By.cssSelector("input[type='text']");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\pages\HomePage.java:17: error: cannot find symbol
+    private final By searchButton = By.className("SearchBoxOld-buttonContainer");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\pages\HomePage.java:18: error: cannot find symbol
+    private final By userAccountName = By.className("sf-OldMyAccount-PhYJJN9_E1yH52iCajb2");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\pages\HomePage.java:19: error: cannot find symbol
+    private final By cookieAcceptButton = By.id("onetrust-accept-btn-handler");
+                  ^
+  symbol:   class By
+  location: class HomePage
+src\test\java\utils\ScreenshotUtil.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.OutputType;
+                          ^
+src\test\java\utils\ScreenshotUtil.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.TakesScreenshot;
+                          ^
+src\test\java\base\BaseTest.java:21: error: cannot find symbol
+        ChromeOptions options = new ChromeOptions();
+        ^
+  symbol:   class ChromeOptions
+  location: class BaseTest
+src\test\java\base\BaseTest.java:21: error: cannot find symbol
+        ChromeOptions options = new ChromeOptions();
+                                    ^
+  symbol:   class ChromeOptions
+  location: class BaseTest
+src\test\java\base\BaseTest.java:26: error: cannot find symbol
+        driver = new ChromeDriver(options);
+                     ^
+  symbol:   class ChromeDriver
+  location: class BaseTest
+src\test\java\org\example\BasePage.java:29: error: cannot find symbol
+            wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+                       ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src\test\java\org\example\BasePage.java:35: error: cannot find symbol
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:40: error: cannot find symbol
+        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:40: error: cannot find symbol
+        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+                                   ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:43: error: cannot find symbol
+        } catch (ElementClickInterceptedException | StaleElementReferenceException e) {
+                 ^
+  symbol:   class ElementClickInterceptedException
+  location: class BasePage
+src\test\java\org\example\BasePage.java:43: error: cannot find symbol
+        } catch (ElementClickInterceptedException | StaleElementReferenceException e) {
+                                                    ^
+  symbol:   class StaleElementReferenceException
+  location: class BasePage
+src\test\java\org\example\BasePage.java:51: error: cannot find symbol
+        WebElement element = findElement(locator);
+        ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:58: error: cannot find symbol
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:63: error: cannot find symbol
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                   ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:68: error: cannot find symbol
+        wait.until(ExpectedConditions.urlContains(fragment));
+                   ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:74: error: cannot find symbol
+            WebDriverWait shortWait = new WebDriverWait(driver, timeout);
+            ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src\test\java\org\example\BasePage.java:74: error: cannot find symbol
+            WebDriverWait shortWait = new WebDriverWait(driver, timeout);
+                                          ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src\test\java\org\example\BasePage.java:75: error: cannot find symbol
+            return Optional.of(shortWait.until(ExpectedConditions.visibilityOfElementLocated(locator)));
+                                               ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:76: error: cannot find symbol
+        } catch (TimeoutException e) {
+                 ^
+  symbol:   class TimeoutException
+  location: class BasePage
+src\test\java\org\example\BasePage.java:83: error: cannot find symbol
+        ((JavascriptExecutor) driver).executeScript(
+          ^
+  symbol:   class JavascriptExecutor
+  location: class BasePage
+src\test\java\org\example\BasePage.java:89: error: cannot find symbol
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        ^
+  symbol:   class WebElement
+  location: class BasePage
+src\test\java\org\example\BasePage.java:89: error: cannot find symbol
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+                                        ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src\test\java\org\example\BasePage.java:90: error: cannot find symbol
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+          ^
+  symbol:   class JavascriptExecutor
+  location: class BasePage
+src\test\java\org\example\Locator.java:20: error: cannot find symbol
+            case "id" -> By.id(val);
+                         ^
+  symbol:   variable By
+  location: class Locator
+src\test\java\org\example\Locator.java:21: error: cannot find symbol
+            case "css" -> By.cssSelector(val);
+                          ^
+  symbol:   variable By
+  location: class Locator
+src\test\java\org\example\Locator.java:22: error: cannot find symbol
+            case "class" -> By.className(val);
+                            ^
+  symbol:   variable By
+  location: class Locator
+src\test\java\org\example\Locator.java:23: error: cannot find symbol
+            default -> By.xpath(val);
+                       ^
+  symbol:   variable By
+  location: class Locator
+src\test\java\org\example\StepImplementation.java:29: error: cannot find symbol
+        new Actions(driver).moveToElement(driver.findElement(Locator.get(key))).perform();
+            ^
+  symbol:   class Actions
+  location: class StepImplementation
+src\test\java\org\example\StepImplementation.java:49: error: cannot find symbol
+        findElement(Locator.get(key)).sendKeys(Keys.ENTER);
+                                               ^
+  symbol:   variable Keys
+  location: class StepImplementation
+src\test\java\pages\HomePage.java:14: error: cannot find symbol
+    private final By loginOrRegisterButton = By.id("myAccount");
+                                             ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\HomePage.java:15: error: cannot find symbol
+    private final By loginButton = By.id("login");
+                                   ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\HomePage.java:16: error: cannot find symbol
+    private final By searchBox = By.cssSelector("input[type='text']");
+                                 ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\HomePage.java:17: error: cannot find symbol
+    private final By searchButton = By.className("SearchBoxOld-buttonContainer");
+                                    ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\HomePage.java:18: error: cannot find symbol
+    private final By userAccountName = By.className("sf-OldMyAccount-PhYJJN9_E1yH52iCajb2");
+                                       ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\HomePage.java:19: error: cannot find symbol
+    private final By cookieAcceptButton = By.id("onetrust-accept-btn-handler");
+                                          ^
+  symbol:   variable By
+  location: class HomePage
+src\test\java\pages\LoginPage.java:11: error: cannot find symbol
+    private final By emailInput = By.id("txtUserName");
+                                  ^
+  symbol:   variable By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:12: error: cannot find symbol
+    private final By loginButtonAfterEmail = By.id("btnLogin");
+                                             ^
+  symbol:   variable By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:13: error: cannot find symbol
+    private final By passwordInput = By.id("txtPassword");
+                                     ^
+  symbol:   variable By
+  location: class LoginPage
+src\test\java\pages\LoginPage.java:14: error: cannot find symbol
+    private final By btnEmailSelect = By.id("btnEmailSelect");
+                                      ^
+  symbol:   variable By
+  location: class LoginPage
+src\test\java\pages\SearchPage.java:20: error: cannot find symbol
+    private final By productListItems = By.cssSelector("li[class*='productList']");
+                                        ^
+  symbol:   variable By
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:23: error: cannot find symbol
+        List<WebElement> products = findElements(productListItems);
+             ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:38: error: cannot find symbol
+        List<WebElement> products = findElements(productListItems);
+             ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:45: error: cannot find symbol
+        WebElement target = products.get(targetIndex);
+        ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:56: error: cannot find symbol
+            WebElement link = target.findElement(By.cssSelector("a"));
+            ^
+  symbol:   class WebElement
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:56: error: cannot find symbol
+            WebElement link = target.findElement(By.cssSelector("a"));
+                                                 ^
+  symbol:   variable By
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:78: error: cannot find symbol
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        ^
+  symbol:   class JavascriptExecutor
+  location: class SearchPage
+src\test\java\pages\SearchPage.java:78: error: cannot find symbol
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+                                 ^
+  symbol:   class JavascriptExecutor
+  location: class SearchPage
+src\test\java\pages\CartPage.java:13: error: cannot find symbol
+    private final By addToCartDirectButton = By.id("addToCart");
+                                             ^
+  symbol:   variable By
+  location: class CartPage
+src\test\java\pages\CartPage.java:14: error: cannot find symbol
+    private final By cartIcon = By.id("shoppingCart");
+                                ^
+  symbol:   variable By
+  location: class CartPage
+src\test\java\pages\CartPage.java:15: error: cannot find symbol
+    private final By cartItemName = By.className("product_name_2Klj3");
+                                    ^
+  symbol:   variable By
+  location: class CartPage
+src\test\java\pages\CartPage.java:16: error: cannot find symbol
+    private final By productTitleH1 = By.cssSelector("h1");
+                                      ^
+  symbol:   variable By
+  location: class CartPage
+src\test\java\pages\CartPage.java:25: error: cannot find symbol
+            WebElement h1 = findElement(productTitleH1);
+            ^
+  symbol:   class WebElement
+  location: class CartPage
+100 errors
+only showing the first 100 errors, of 103 total; use -Xmaxerrs if you would like to see more

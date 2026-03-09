@@ -1,0 +1,17 @@
+# Hepsiburada ana sayfasına git
+* url adresine gidilir
+
+# Giriş yap sayfasına git
+* loginMenu üzerine hover yapılır
+* loginBtn tıklanır
+
+# Geçerli kullanıcı ile login ol
+* emailInput alanına email yazılır
+* loginAfterEmail tıklanır
+* passwordInput alanına password yazılır
+* submitLogin tıklanır
+* userLabel görünür olmalı
+
+# Arama yap
+* searchBox alanına arananKelime yazılır
+* searchBox alanında ENTER basılır

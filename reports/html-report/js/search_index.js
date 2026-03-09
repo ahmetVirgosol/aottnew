@@ -1,0 +1,1 @@
+var index = {"Tags":{},"Specs":{"HB-TC01-Login,bilgisayar ara,ikinci satırdaki ilk ürünü sepete ekle ve sepette olduğunu doğrula":["specs/Scenarios/HB-TC01.html"]}};

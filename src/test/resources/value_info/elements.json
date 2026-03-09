@@ -1,0 +1,14 @@
+{
+  "loginMenu": {"type": "id", "value": "myAccount"},
+  "loginBtn": {"type": "id", "value": "login"},
+  "emailInput": {"type": "id", "value": "txtUserName"},
+  "loginAfterEmail": {"type": "id", "value": "btnLogin"},
+  "passwordInput": {"type": "id", "value": "txtPassword"},
+  "submitLogin": {"type": "id", "value": "btnEmailSelect"},
+  "userLabel": {"type": "class", "value": "sf-OldMyAccount-PhYJJN9_E1yH52iCajb2"},
+  "searchBox": {"type": "css", "value": "input[type='text']"},
+  "productItems": {"type": "css", "value": "li[class*='productList']"},
+  "addToCart": {"type": "id", "value": "addToCart"},
+  "cartIcon": {"type": "id", "value": "shoppingCart"},
+  "cartTitle": {"type": "class", "value": "product_name_2Klj3"}
+}

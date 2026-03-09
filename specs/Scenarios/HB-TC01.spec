@@ -1,0 +1,18 @@
+# HB-TC01-Login,bilgisayar ara,ikinci satırdaki ilk ürünü sepete ekle ve sepette olduğunu doğrula
+
+## Başarılı alışveriş senaryosu
+* Tarayıcıyı aç
+* URL'ye git
+* Giriş yap sayfasına git
+* Email-telefon alanına geçerli kullanıcı adı gir
+* Şifre alanına şifreyi gir
+* Giriş yap butonuna tıkla
+* Loginin başarılı olduğunu doğrula
+* Arama kutusuna bilgisayar yaz
+* Aramayı başlat
+* Arama sonuçlarının gelmesini bekle
+* Ürün listesi görünür olmalı
+* Gridde 2. satır 1. ürün seçilir
+* İkinci satırdaki ilk ürünü sepete ekle
+* Sepete git
+* Sepette olduğunu doğrula
