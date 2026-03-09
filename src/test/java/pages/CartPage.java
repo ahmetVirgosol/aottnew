@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CartPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(CartPage.class);
 
-    // Ürün detay sayfasındaki "Sepete ekle" butonu
+    
     private final By addToCartDirectButton = By.cssSelector("button[data-test-id='addToCart']");
     private final By cartIcon = By.id("shoppingCart");
     private final By productTitleH1 = By.cssSelector("h1");
@@ -39,7 +39,7 @@ public class CartPage extends BasePage {
         if (expectedTitle == null) expectedTitle = "";
         expectedTitle = expectedTitle.trim();
 
-        // Sepet satirlarindaki urun isimleri: div.product_name_2Klj3 > a
+       
         var nameLinks = findElements(By.cssSelector("div.product_name_2Klj3 a[href]"));
 
         assertThat(nameLinks)

@@ -11,9 +11,9 @@ import java.time.Duration;
 public class LoginPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
-    // Şu anki DOM'a göre tek sayfalı login ekranı:
-    // email: id=txtUserName, şifre: id=txtPassword, giriş: id=btnLogin
-    // Eski fallback locator'ları ileride ihtiyaç olursa geri alabilmek için git revizyonunda duruyor.
+    // anlık dom icin log ekranı
+    //eski fallback mantıgı beni patlattı elimde kalsın
+    // Eski fallback locator ileride ihtiyaç olursa geri alabilmek için git revizyonunda duruyor.
     private final By emailInput = By.id("txtUserName");
     private final By passwordInput = By.id("txtPassword");
     private final By loginButton = By.id("btnLogin");
@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
     }
 
     public void continueAfterEmail() {
-        // Tek sayfalı login ekranında ekstra bir "Devam" adımı yok; şimdilik no-op.
+       
         logger.info("continueAfterEmail cagrildi ancak tek sayfali login ekraninda ek islem yapilmadi.");
     }
 

@@ -39,7 +39,7 @@ public class HomePage extends BasePage {
     public void verifySuccessfulLogin() {
         boolean isDisplayed = findElement(userAccountName).isDisplayed();
 
-        // AssertJ kullanimi
+        
         assertThat(isDisplayed)
                 .withFailMessage("Kullanici adi sayfada goruntulenemedi, login basarisiz olabilir.")
                 .isTrue();
@@ -55,7 +55,7 @@ public class HomePage extends BasePage {
     public void typeSearchKeyword(String keyword) {
         WebElement box = findElement(searchBox);
         scrollIntoView(box);
-        // JS ile value set + input event gönder, interactable kısıtını atla
+        // JS ile value set + input event gönder interactable kısıtını atla durumunu temsil ettim
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].value = arguments[1];" +
                 "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));",
@@ -66,7 +66,7 @@ public class HomePage extends BasePage {
     }
 
     public void submitSearch() {
-        // Arama kutusuna zaten 'bilgisayar' yazıldı; Hepsiburada sonuç sayfasına direkt git.
+        // Arama kutusuna zaten 'bilgisayar' yazıldı hburada sonuc sayfasına direkt git
         String query = "bilgisayar";
         String url = "https://www.hepsiburada.com/ara?q=" + query;
         driver.get(url);
@@ -86,7 +86,7 @@ public class HomePage extends BasePage {
             tryDismissObstructions();
         } catch (Exception ignored) {
         }
-        // Anti-bot/engellenme ekranını erken fark edelim
+        // anti bot engelleme ekranını erken takıpe al baska caselerde vardı sanki
         failIfBlockedN1E2();
     }
 

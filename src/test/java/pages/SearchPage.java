@@ -50,7 +50,7 @@ public class SearchPage extends BasePage {
             title = "(urun basligi okunamadi)";
         }
 
-        // Kartın kendisi her zaman clickable olmayabilir; link'i dene, olmazsa kartı tıkla.
+        // Kartın kendisi her zaman clickable olmaz
         boolean clicked = false;
         try {
             WebElement link = target.findElement(By.cssSelector("a"));
@@ -66,7 +66,7 @@ public class SearchPage extends BasePage {
             }
         }
 
-        // Hepsiburada bazen ürün detayını yeni sekmede açabiliyor.
+        // Hepsiburada OZEL durumu bazen yan sekmede acabilir
         switchToNewestWindow();
 
         logger.info("Ikinci satirdaki ilk urun acildi. Index=" + targetIndex + ", title=" + title);
@@ -91,7 +91,7 @@ public class SearchPage extends BasePage {
 
         if (rects == null || rects.isEmpty()) return -1;
 
-        // Row'ları "top" değerine göre grupla (küçük farklar için tolerans).
+        // Row'ları "top" değerine göre grupladım
         int tolerance = 6;
         List<Integer> rowTops = new ArrayList<>();
         for (Map<String, Number> r : rects) {
@@ -109,7 +109,7 @@ public class SearchPage extends BasePage {
         if (rowTops.size() < 2) return -1;
         int secondRowTop = rowTops.get(1);
 
-        // 2. satırdaki ürünler arasında en soldakini seç.
+        // 2. satırdaki ürünler arasında en soldakini sec
         int bestIdx = -1;
         int bestLeft = Integer.MAX_VALUE;
         for (int i = 0; i < rects.size(); i++) {

@@ -14,7 +14,7 @@ public class BasePage {
     protected WebDriverWait wait;
 
     public BasePage() {
-        // Gauge step sınıfları bazen @BeforeScenario'dan önce instantiate edilebilir.
+        //db lazyloading alakası yok  gecikme suresıne fokus kotu durumdan korun
         // Bu yüzden driver/wait lazy-init olarak yönetiliyor.
     }
 
@@ -41,12 +41,12 @@ public class BasePage {
         try {
             el.click();
         } catch (ElementClickInterceptedException | StaleElementReferenceException e) {
-            // Overlay/popup tıklamayı engelliyorsa önce kapatmayı dene, sonra tekrar dene.
+            // Overlay/popup tıklamayı engelliyorsa -- kapatmayı dene -- sonra tekrar dene
             tryDismissObstructions();
             try {
                 wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
             } catch (Exception ignored) {
-                // Son çare: JS click
+                // Son çare -- JS click bunu tekrar kullanıcam
                 jsClick(locator);
             }
         }
@@ -126,13 +126,13 @@ public class BasePage {
 
     protected void tryDismissObstructions() {
         ensureDriver();
-        // ESC çoğu modalı kapatır
+        // ESC çoğu modalı kapatıyordu ??
         try {
             driver.switchTo().activeElement().sendKeys(Keys.ESCAPE);
         } catch (Exception ignored) {
         }
 
-        // Cookie/overlay/marketing popup close butonları için yaygın selector'lar
+        // Cookie/overlay/marketing popup close butonları için yaygın selector bunları fallback ıcın denedım
         By[] closeCandidates = new By[]{
                 By.id("onetrust-accept-btn-handler"),
                 By.cssSelector("button[aria-label='Kapat']"),
@@ -152,7 +152,7 @@ public class BasePage {
                     try {
                         if (el.isDisplayed() && el.isEnabled()) {
                             el.click();
-                            // tek popup kapatmak genelde yeterli
+                            // tek popup kapat kalanlarına dokunma durumu .!!
                             return;
                         }
                     } catch (Exception ignored) {
@@ -165,7 +165,7 @@ public class BasePage {
 
     protected void failIfBlockedN1E2() {
         ensureDriver();
-        // N1E2 engeli geldiğinde login elementleri görünmez olur; bunu erken yakalayıp net mesaj verelim.
+        // N1E2 engeli geldiğinde login elementleri gorunmez olur bunu erken yakaladım ama sonuc degıstırmez
         By n1e2 = By.xpath("//*[contains(.,'Hata Kodu') and contains(.,'(N1E2)')]");
         if (findOptional(n1e2, Duration.ofSeconds(1)).isPresent()) {
             throw new IllegalStateException("Sayfa 'Hata Kodu: (N1E2)' ile engellendi (bot/süpheli trafik). Bu durumda otomasyon akışı devam edemez.");
@@ -179,7 +179,7 @@ public class BasePage {
         if (handles.size() <= 1) return;
 
         List<String> ordered = new ArrayList<>(handles);
-        // Selenium handle set sırası garanti değil; pratikte yeni sekme genelde en sonda oluyor.
+        
         for (int i = ordered.size() - 1; i >= 0; i--) {
             String h = ordered.get(i);
             if (!h.equals(current)) {

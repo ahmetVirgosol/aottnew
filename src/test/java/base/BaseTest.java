@@ -27,7 +27,7 @@ public class BaseTest {
         options.addArguments("--disable-blink-features=AutomationControlled");
 
         driver = new ChromeDriver(options);
-        // Explicit wait kullanıyoruz; implicit wait kapalı kalsın.
+      
         driver.manage().timeouts().implicitlyWait(Duration.ZERO);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
         driver.manage().window().maximize();
