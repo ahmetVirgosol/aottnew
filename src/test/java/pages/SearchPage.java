@@ -1,6 +1,7 @@
 package pages;
 
 import org.example.BasePage;
+import org.example.Locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,7 @@ import java.util.Map;
 public class SearchPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(SearchPage.class);
 
-    private final By productListItems = By.cssSelector("li[class*='productList']");
+    private final By productListItems = Locator.get("productItems");
 
     public void waitForSearchResults() {
         List<WebElement> products = findElements(productListItems);
@@ -29,10 +30,6 @@ public class SearchPage extends BasePage {
         logger.info("Arama sonuclari sayfasinin yuklendigi ve urunlerin listelendigi dogrulandi.");
     }
 
-    /**
-     * Ekrandaki gerçek yerleşime göre "2. satırın 1. ürünü" seçer.
-     * (Kolon sayısı responsive olarak değişebildiği için index=4 gibi sabit yaklaşım kırılabiliyor.)
-     */
     public String selectFirstProductOnSecondRowAndOpen() {
         waitForSearchResults();
         List<WebElement> products = findElements(productListItems);
@@ -50,7 +47,6 @@ public class SearchPage extends BasePage {
             title = "(urun basligi okunamadi)";
         }
 
-        // Kartın kendisi her zaman clickable olmaz
         boolean clicked = false;
         try {
             WebElement link = target.findElement(By.cssSelector("a"));
@@ -66,7 +62,6 @@ public class SearchPage extends BasePage {
             }
         }
 
-        // Hepsiburada OZEL durumu bazen yan sekmede acabilir
         switchToNewestWindow();
 
         logger.info("Ikinci satirdaki ilk urun acildi. Index=" + targetIndex + ", title=" + title);
@@ -91,7 +86,6 @@ public class SearchPage extends BasePage {
 
         if (rects == null || rects.isEmpty()) return -1;
 
-        // Row'ları "top" değerine göre grupladım
         int tolerance = 6;
         List<Integer> rowTops = new ArrayList<>();
         for (Map<String, Number> r : rects) {
@@ -109,7 +103,6 @@ public class SearchPage extends BasePage {
         if (rowTops.size() < 2) return -1;
         int secondRowTop = rowTops.get(1);
 
-        // 2. satırdaki ürünler arasında en soldakini sec
         int bestIdx = -1;
         int bestLeft = Integer.MAX_VALUE;
         for (int i = 0; i < rects.size(); i++) {

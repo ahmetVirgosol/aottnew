@@ -1,6 +1,7 @@
 package pages;
 
 import org.example.BasePage;
+import org.example.Locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,15 +14,13 @@ import java.time.Duration;
 public class HomePage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(HomePage.class);
 
-    private final By loginOrRegisterButton = By.id("myAccount");
-    private final By loginButton = By.id("btnLogin");
-    private final By searchBox = By.cssSelector("input[data-test-id='search-bar-input']");
-    private final By searchButton = By.className("SearchBoxOld-buttonContainer");
-    private final By userAccountName = By.cssSelector("span.sf-OldMyAccount-sS_G2sunmDtZl9Tld5PR");
-    private final By cookieAcceptButton = By.id("eefe4907-e404-4da1-923b-7787d076df08");
+    private final By loginOrRegisterButton = Locator.get("loginMenu");
+    private final By loginButton           = Locator.get("loginBtn");
+    private final By searchBox             = Locator.get("searchBox");
+    private final By userAccountName       = Locator.get("userLabel");
+    private final By cookieAcceptButton    = By.id("eefe4907-e404-4da1-923b-7787d076df08");
     private final By closePopupButton = By.cssSelector("button[aria-label='Kapat'],button[title='Kapat'],button[aria-label='Close'],button[title='Close']");
-    
- 
+
     public void navigateToUrl(String url) {
         ensureDriver();
         driver.get(url);
@@ -39,7 +38,6 @@ public class HomePage extends BasePage {
     public void verifySuccessfulLogin() {
         boolean isDisplayed = findElement(userAccountName).isDisplayed();
 
-        
         assertThat(isDisplayed)
                 .withFailMessage("Kullanici adi sayfada goruntulenemedi, login basarisiz olabilir.")
                 .isTrue();
@@ -55,7 +53,6 @@ public class HomePage extends BasePage {
     public void typeSearchKeyword(String keyword) {
         WebElement box = findElement(searchBox);
         scrollIntoView(box);
-        // JS ile value set + input event gönder interactable kısıtını atla durumunu temsil ettim
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].value = arguments[1];" +
                 "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));",
@@ -66,7 +63,6 @@ public class HomePage extends BasePage {
     }
 
     public void submitSearch() {
-        // Arama kutusuna zaten 'bilgisayar' yazıldı hburada sonuc sayfasına direkt git
         String query = "bilgisayar";
         String url = "https://www.hepsiburada.com/ara?q=" + query;
         driver.get(url);
@@ -81,12 +77,10 @@ public class HomePage extends BasePage {
             } catch (Exception ignored) {
             }
         });
-        // Genel engelleyiciler için bir tur daha dene
         try {
             tryDismissObstructions();
         } catch (Exception ignored) {
         }
-        // anti bot engelleme ekranını erken takıpe al baska caselerde vardı sanki
         failIfBlockedN1E2();
     }
 

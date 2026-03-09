@@ -1,6 +1,7 @@
 package pages;
 
 import org.example.BasePage;
+import org.example.Locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -10,10 +11,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CartPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(CartPage.class);
 
-    
-    private final By addToCartDirectButton = By.cssSelector("button[data-test-id='addToCart']");
-    private final By cartIcon = By.id("shoppingCart");
-    private final By productTitleH1 = By.cssSelector("h1");
+    private final By addToCartDirectButton = Locator.get("addToCart");
+    private final By cartIcon              = Locator.get("cartIcon");
+    private final By productTitleH1        = By.cssSelector("h1");
 
     public void addProductToCart() {
         clickElement(addToCartDirectButton);

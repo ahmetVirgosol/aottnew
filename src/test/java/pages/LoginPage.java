@@ -1,6 +1,7 @@
 package pages;
 
 import org.example.BasePage;
+import org.example.Locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -11,12 +12,9 @@ import java.time.Duration;
 public class LoginPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
-    // anlık dom icin log ekranı
-    //eski fallback mantıgı beni patlattı elimde kalsın
-    // Eski fallback locator ileride ihtiyaç olursa geri alabilmek için git revizyonunda duruyor.
-    private final By emailInput = By.id("txtUserName");
-    private final By passwordInput = By.id("txtPassword");
-    private final By loginButton = By.id("btnLogin");
+    private final By emailInput    = Locator.get("emailInput");
+    private final By passwordInput = Locator.get("passwordInput");
+    private final By loginButton   = Locator.get("btn_GirisYap");
 
     public void typeEmail(String email) {
         WebElement input = findFirstVisible(Duration.ofSeconds(5), emailInput);
@@ -26,7 +24,6 @@ public class LoginPage extends BasePage {
     }
 
     public void continueAfterEmail() {
-       
         logger.info("continueAfterEmail cagrildi ancak tek sayfali login ekraninda ek islem yapilmadi.");
     }
 

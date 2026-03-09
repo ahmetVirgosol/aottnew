@@ -67,18 +67,14 @@ public class StepImplementation extends BasePage {
     @Step("Gridde 2. satır 1. ürün seçilir")
     public void selectProduct() {
         selectedProductTitle = searchPage.selectFirstProductOnSecondRowAndOpen();
-        
         String detailTitle = cartPage.readProductTitleOnDetailPage();
         if (detailTitle != null && !detailTitle.isBlank()) {
             selectedProductTitle = detailTitle;
         }
     }
 
-    // --- HB-TC01 senaryosuna fokus hepsiburadaspec ignore
-
     @Step("Tarayıcıyı aç")
     public void openBrowser() {
-   
         ensureDriver();
         assertThat(driver).isNotNull();
     }

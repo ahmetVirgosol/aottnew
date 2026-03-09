@@ -1,0 +1,90 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 3033milliseconds to load and scan. This should be less than \u0027runner_connection_timeout\u0027 config value."}
+{"logLevel":"debug","message":"run \u0027gauge config runner_connection_timeout\u0027 and verify that it is \u003c 3033"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 54182"}
+{"logLevel":"info","message":"Listening on port:54182"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.hoverStep\u0027 and \u0027org.example.StepImplementation.hoverStep\u0027"}
+{"logLevel":"debug","message":"Found {} üzerine hover yapılır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.goToHomePage\u0027 and \u0027org.example.StepImplementation.goToHomePage\u0027"}
+{"logLevel":"debug","message":"Found URL\u0027ye git in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.clickStep\u0027 and \u0027org.example.StepImplementation.clickStep\u0027"}
+{"logLevel":"debug","message":"Found {} tıklanır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.typePassword\u0027 and \u0027org.example.StepImplementation.typePassword\u0027"}
+{"logLevel":"debug","message":"Found Şifre alanına şifreyi gir in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.submitLogin\u0027 and \u0027org.example.StepImplementation.submitLogin\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.waitResults\u0027 and \u0027org.example.StepImplementation.waitResults\u0027"}
+{"logLevel":"debug","message":"Found Arama sonuçlarının gelmesini bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.selectProduct\u0027 and \u0027org.example.StepImplementation.selectProduct\u0027"}
+{"logLevel":"debug","message":"Found Gridde 2. satır 1. ürün seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.verifyProductListVisible\u0027 and \u0027org.example.StepImplementation.verifyProductListVisible\u0027"}
+{"logLevel":"debug","message":"Found Ürün listesi görünür olmalı in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.clickLoginButtonFromMenu\u0027 and \u0027org.example.StepImplementation.clickLoginButtonFromMenu\u0027"}
+{"logLevel":"debug","message":"Found loginBtn tıklanır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.hoverLoginMenu\u0027 and \u0027org.example.StepImplementation.hoverLoginMenu\u0027"}
+{"logLevel":"debug","message":"Found loginMenu üzerine hover yapılır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.checkList\u0027 and \u0027org.example.StepImplementation.checkList\u0027"}
+{"logLevel":"debug","message":"Found {} listesinin dolu olduğu doğrulanır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.verifyLoginSuccess\u0027 and \u0027org.example.StepImplementation.verifyLoginSuccess\u0027"}
+{"logLevel":"debug","message":"Found Loginin başarılı olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.typeValidEmailAndContinue\u0027 and \u0027org.example.StepImplementation.typeValidEmailAndContinue\u0027"}
+{"logLevel":"debug","message":"Found Email-telefon alanına geçerli kullanıcı adı gir in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.typeComputerInSearch\u0027 and \u0027org.example.StepImplementation.typeComputerInSearch\u0027"}
+{"logLevel":"debug","message":"Found Arama kutusuna bilgisayar yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.typeStep\u0027 and \u0027org.example.StepImplementation.typeStep\u0027"}
+{"logLevel":"debug","message":"Found {} alanına {} yazılır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.goToCart\u0027 and \u0027org.example.StepImplementation.goToCart\u0027"}
+{"logLevel":"debug","message":"Found Sepete git in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.verifyInCart\u0027 and \u0027org.example.StepImplementation.verifyInCart\u0027"}
+{"logLevel":"debug","message":"Found Sepette olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.goToLoginPage\u0027 and \u0027org.example.StepImplementation.goToLoginPage\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.addSelectedProductToCart\u0027 and \u0027org.example.StepImplementation.addSelectedProductToCart\u0027"}
+{"logLevel":"debug","message":"Found İkinci satırdaki ilk ürünü sepete ekle in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.checkVisible\u0027 and \u0027org.example.StepImplementation.checkVisible\u0027"}
+{"logLevel":"debug","message":"Found {} görünür olmalı in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.pressEnter\u0027 and \u0027org.example.StepImplementation.pressEnter\u0027"}
+{"logLevel":"debug","message":"Found {} alanında ENTER basılır in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.submitSearch\u0027 and \u0027org.example.StepImplementation.submitSearch\u0027"}
+{"logLevel":"debug","message":"Found Aramayı başlat in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.openBrowser\u0027 and \u0027org.example.StepImplementation.openBrowser\u0027"}
+{"logLevel":"debug","message":"Found Tarayıcıyı aç in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027org.example.StepImplementation.navigate\u0027 and \u0027org.example.StepImplementation.navigate\u0027"}
+{"logLevel":"debug","message":"Found {} adresine gidilir in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tŞifre alanına şifreyi gir : public void typePassword()"}
+{"logLevel":"debug","message":"\t{} görünür olmalı : public void checkVisible(String key)"}
+{"logLevel":"debug","message":"\tGridde 2. satır 1. ürün seçilir : public void selectProduct()"}
+{"logLevel":"debug","message":"\t{} alanında ENTER basılır : public void pressEnter(String key)"}
+{"logLevel":"debug","message":"\tLoginin başarılı olduğunu doğrula : public void verifyLoginSuccess()"}
+{"logLevel":"debug","message":"\tÜrün listesi görünür olmalı : public void verifyProductListVisible()"}
+{"logLevel":"debug","message":"\t{} adresine gidilir : public void navigate(String key)"}
+{"logLevel":"debug","message":"\t{} listesinin dolu olduğu doğrulanır : public void checkList(String key)"}
+{"logLevel":"debug","message":"\tSepette olduğunu doğrula : public void verifyInCart()"}
+{"logLevel":"debug","message":"\tURL\u0027ye git : public void goToHomePage()"}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıkla : public void submitLogin()"}
+{"logLevel":"debug","message":"\tAramayı başlat : public void submitSearch()"}
+{"logLevel":"debug","message":"\tloginMenu üzerine hover yapılır : public void hoverLoginMenu()"}
+{"logLevel":"debug","message":"\tTarayıcıyı aç : public void openBrowser()"}
+{"logLevel":"debug","message":"\tGiriş yap sayfasına git : public void goToLoginPage()"}
+{"logLevel":"debug","message":"\tEmail-telefon alanına geçerli kullanıcı adı gir : public void typeValidEmailAndContinue()"}
+{"logLevel":"debug","message":"\tArama kutusuna bilgisayar yaz : public void typeComputerInSearch()"}
+{"logLevel":"debug","message":"\tSepete git : public void goToCart()"}
+{"logLevel":"debug","message":"\t{} üzerine hover yapılır : public void hoverStep(String key)"}
+{"logLevel":"debug","message":"\t{} alanına {} yazılır : public void typeStep(String key, String dataKey)"}
+{"logLevel":"debug","message":"\tloginBtn tıklanır : public void clickLoginButtonFromMenu()"}
+{"logLevel":"debug","message":"\tİkinci satırdaki ilk ürünü sepete ekle : public void addSelectedProductToCart()"}
+{"logLevel":"debug","message":"\t{} tıklanır : public void clickStep(String key)"}
+{"logLevel":"debug","message":"\tArama sonuçlarının gelmesini bekle : public void waitResults()"}
+{"logLevel":"debug","message":"Executing \u0027Tarayıcıyı aç\u0027 using \u0027class org.example.StepImplementation.openBrowser"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
