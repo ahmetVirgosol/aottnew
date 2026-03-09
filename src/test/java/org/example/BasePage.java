@@ -127,7 +127,7 @@ public class BasePage {
             driver.switchTo().activeElement().sendKeys(Keys.ESCAPE);
         } catch (Exception ignored) {
         }
-
+         //fallback ama dizi içinde tutuğum zaman daha op
         By[] closeCandidates = new By[]{
                 By.id("onetrust-accept-btn-handler"),
                 By.cssSelector("button[aria-label='Kapat']"),
